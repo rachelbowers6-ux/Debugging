@@ -13,7 +13,7 @@ start
       num net
    output "Enter first name or ", EOFNAME, " to quit"
    input name
-   if name not equal to EOFNAME
+   if name <> to EOFNAME
       output "Enter hours worked for ", name
       input hours
       output "Enter hourly rate for ", name

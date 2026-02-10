@@ -1,10 +1,13 @@
 Question: You have been tasked with reviewing and updating this program. What steps would you take to identify any issues in the code?
 Your Response:
 
-The first steps I would take to review and debug this program would be to ensure words are spelled properly and that everything is in the correct order.  
+The steps I would take to review and debug this program would be to ensure words are spelled properly and that everything is in the correct order. I would also check to make sure that parentheses and quotations are placed where they are needed.
 
 Question: What actions could the developer have taken to minimize the number of errors?
 Your Response:
+
+The developer could minimize errors by using correct indentations and keeping code simple and direct.
+
 
 Debbugging Exercise:
 
@@ -17,19 +20,21 @@ start
       num secondTest
       num average 
       num PASSING = 60
-   output "Enter first score or 0 to quit "
+   output "Enter First score or 0 to quit"
+   firstTest = input ("enter firstTest score or 0 to quit")
    while firstTest <> to 0
-      output "Enter secondtest score "
-      input secondTest
+      output ("Enter second score")
+      secondTest = input ("enter secondTest score or 0 to quit")
   while secondTest <> to 0 
-      average = firstTest + secondTest / 2
-      ouput "Average is ", average
+      average = (firstTest + secondTest) / 2
+      output "Average is ", average
       if average >= PASSING then
          output "Pass"
       else
          output "Fail"
       endif
-      output "Enter first score or 0 to quit "
+      output "Enter first score or 0 to quit"
+      input firstTest
    endwhile
 stop
 

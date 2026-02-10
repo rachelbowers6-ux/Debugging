@@ -9,15 +9,16 @@ start
       num upkeep
       num total
    startup()
-   while mortgagePayment not equal to 0
-      MainLoop()
+   while mortgagePayment <> to 0
+   MainLoop()
    endwhile
    finishUp()
 stop
 
 startUp()
-   output "Enter your mortgage payment or 0 to quit"
-   input mtgPayment
+   output "Enter your mortgage payment or 0 to quit "
+   input mortgagePayment
+   morgatagePayment = input("Enter mortgage payment or 0 to quit")
 return
 
 mainLoop()
@@ -29,6 +30,7 @@ mainLoop()
    input upkeep
    total = mortgagePayment + utilities + taxes + upkeep
    output "Total is ", total
+   input total 
 return
 
 finishUp()

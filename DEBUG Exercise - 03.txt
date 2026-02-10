@@ -11,10 +11,10 @@ start
    while name <> to EOFNAME
       housekeeping()
    endwhile
-   while name not equal to EOFNAME
+   while name <> to EOFNAME
       mainLoop()
    endwhile
-   while name not equal to EOFNAME
+   while name <> to EOFNAME
       finish()
    endwhile
 stop
